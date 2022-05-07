@@ -83,3 +83,28 @@
     }
 }
 
+//footer
+.footer {
+    background-color: $background-dark;
+    color: white;
+    display: flex;
+    height: 170px;
+    @include verticle;
+    .footer__logo {
+        @include center;
+    }
+    .fa-utensils, .fa-handshake-angle {
+        padding-right: 2px;
+        font-size: 20px; 
+    }
+    .fa-ul {
+        @include row;
+        list-style: none; 
+        align-items: baseline;
+        justify-content: space-evenly;
+        font-family: $roboto;
+    }
+}
+
+
+

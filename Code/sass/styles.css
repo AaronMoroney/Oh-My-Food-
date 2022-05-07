@@ -228,6 +228,33 @@ header {
   color: #9356DC;
 }
 
+.footer {
+  background-color: #353535;
+  color: white;
+  display: flex;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer__logo {
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer .fa-utensils, .footer .fa-handshake-angle {
+  padding-right: 2px;
+  font-size: 20px;
+}
+.footer .fa-ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  align-items: baseline;
+  justify-content: space-evenly;
+  font-family: "roboto regular", sans-serif;
+}
+
 body {
   margin-left: 0px;
   margin-right: 0px;
