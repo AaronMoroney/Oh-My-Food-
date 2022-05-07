@@ -24,11 +24,62 @@
         hsl(267deg 66% 60%) 100%
     );
     background-attachment:fixed;
-    }
     .button__text{
         text-align: center;
         font-family: $roboto;
         font-size: 13pt;
     }
-// how it works button styles
+}
+
+
+// restaurant cards
+
+.restaurantscard__wrapper {
+    height: 677px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .restaurantscard {
+        background-color: white;
+        @include borderstyle;
+        @include boxshadow;
+        width: 44%;
+        height: 305px;
+        margin: 0px 10px 0px 10px;
+        overflow: hidden;
+        position: relative;
+        .restaurantscard__image {
+            width: 100%;
+            height: 209px;
+            object-fit: cover;
+            object-position: center;
+            z-index: 1;
+        }
+        .restaurantcard__ribbon {
+            position: absolute;
+            left: 80%;
+            bottom: 75%;
+            padding: 5px 10px 5px 10px;
+            background-color: #99e2d0;
+            color: #007b58;
+            z-index: 2;
+        }
+        .restaurantscard__info {
+            @include row;
+            justify-content: space-between;
+            height: 93px;
+            line-height: 10px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+        .fa-heart  {
+            font-size: 35px;
+            padding-right: 5%;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}
 
