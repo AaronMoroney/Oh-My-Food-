@@ -61,7 +61,7 @@
     .howitworks__button {
         @include row;
         @include borderstyle-button;
-        width: 250px;
+        width: 270px;
         height: 64px;
         justify-content:flex-start;
         @include boxshadow;
@@ -76,16 +76,20 @@
     }
     .fa-mobile-screen-button {
         padding-left: 10px;
+        font-size: 20px;
 
     }
     .fa-list-ul {
         padding-left: 10px;
+        font-size: 20px;
+
     }
     .fa-store {
         padding-left: 10px;
+        font-size: 20px;
 
     }
-    h3 {
+    .howitworks__buttontext {
         padding-left: 10px;
     }
 }
@@ -95,16 +99,39 @@
 
 .restaurants {
     background-color: $background-light;
-    height: 904px;
+    height: 750px;
+    .restaurants__title {
+        margin-left: 45px;
+        padding-top: 20px;
+    }
 }
+// restaurant cards
 
 .restaurantscard__wrapper {
-    margin-left: 45px;
-    margin-right: 45px;
     height: 677px;
-    width: 870px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     .restaurantscard {
-    background-color: white;
+        background-color: white;
+        @include borderstyle;
+        width: 44%;
+        height: 305px;
+        margin: 0px 10px 0px 10px;
+    }
+    .restaurantscard__info {
+        @include row;
+        justify-content: space-between;
+        height: 93px;
+        line-height: 10px;
+    }
+    .fa-heart  {
+        font-size: 35px;
+        padding-right: 5%;
+        &:hover {
+            background-color: $primary-color;
+        }
     }
 }
 

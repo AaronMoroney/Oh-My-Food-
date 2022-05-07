@@ -57,7 +57,7 @@
                     <button type=button class="howitworks__button">
                         <p class="howitworks__number">1</p>
                         <i class="fa-solid fa-mobile-screen-button"></i>
-                        <h3>Choose A Restaurant</h3>
+                        <p class="howitworks__buttontext">choose a restaurant</p>
                     </button>
                 </span>
                 <!--button2-->
@@ -65,7 +65,7 @@
                     <button type=button class="howitworks__button">
                         <p class="howitworks__number">2</p>
                         <i class="fa-solid fa-list-ul"></i>
-                        <h3>Create Your Menu</h3>
+                        <p class="howitworks__buttontext">create your menu</p>
                     </button>
                 </span>
                 <!--button3-->
@@ -73,7 +73,7 @@
                     <button type=button class="howitworks__button">
                         <p class="howitworks__number">3</p>
                         <i class="fa-solid fa-store"></i>
-                        <h3>Enjoy It At The Restaurant</h3>
+                        <p class="howitworks__buttontext">enjoy it at the restaurant</p>
                     </button>
                 </span>
             </div>
@@ -82,70 +82,72 @@
 
     <!--restaurants section-->
     <div class="restaurants">
-        
+        <h2 class="restaurants__title">Restaurants</h2>
         <div class="restaurantscard__wrapper">
-            <h2>restaurants</h2>
             <!-- restaurant cards1-->
             <div class="restaurantscard">
                 <span>
-                    <img class="restaurantscard_image">
-                    <h1 class="restaurantcard_ribbon"></h1>
+                    <img class="restaurantscard__image">
+                    <h1 class="restaurantcard__ribbon"></h1>
                 </span>
-                <div class="restaurantscard_info">
+                <div class="restaurantscard__info">
                     <span>
                         <h2>The full Pallette</h2>
-                        <p>New York</p>
+                        <h3>New York</h3>
                     </span>
                     <i class="fa-regular fa-heart"></i>
                 </div>
             </div>
-        </div>
-        <!-- restaurant cards2-->
-        <div class="restaurantscard">
-            <span>
-                <img class="restaurantscard_image">
-                <h1 class="restaurantcard_ribbon"></h1>
-            </span>
-            <div class="restaurantscard_info">
+        
+            <!-- restaurant cards2-->
+            <div class="restaurantscard">
                 <span>
-                    <h2>The full Pallette</h2>
-                    <p>New York</p>
+                    <img class="restaurantscard__image">
+                    <h1 class="restaurantcard__ribbon"></h1>
                 </span>
-                <i class="fa-regular fa-heart"></i>
+                <div class="restaurantscard__info">
+                    <span>
+                        <h2>Bastille</h2>
+                        <h3>New York</h3>
+                    </span>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
             </div>
+
+            <!-- restaurant cards3-->
+            <div class="restaurantscard">
+                <span>
+                    <img class="restaurantscard__image">
+                    <h1 class="restaurantcard__ribbon"></h1>
+                </span>
+                <div class="restaurantscard__info">
+                    <span>
+                        <h2>The Enchanted Plate</h2>
+                        <h3>New York</h3>
+                    </span>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+            </div>
+
+            <!-- restaurant cards4-->
+            <div class="restaurantscard">
+                <span>
+                    <img class="restaurantscard__image">
+                    <h1 class="restaurantcard__ribbon"></h1>
+                </span>
+                <div class="restaurantscard__info">
+                    <span>
+                        <h2>Le Gourmand</h2>
+                        <h3>New York</h3>
+                    </span>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+            </div>
+        
+            
         </div>
     </div>
-    <!-- restaurant cards3-->
-    <div class="restaurantscard">
-        <span>
-            <img class="restaurantscard_image">
-            <h1 class="restaurantcard_ribbon"></h1>
-        </span>
-        <div class="restaurantscard_info">
-            <span>
-                <h2>The full Pallette</h2>
-                <p>New York</p>
-            </span>
-            <i class="fa-regular fa-heart"></i>
-        </div>
-    </div>
-    </div>
-    <!-- restaurant cards4-->
-    <div class="restaurantscard">
-        <span>
-            <img class="restaurantscard_image">
-            <h1 class="restaurantcard_ribbon"></h1>
-        </span>
-        <div class="restaurantscard_info">
-            <span>
-                <h2>The full Pallette</h2>
-                <p>New York</p>
-            </span>
-            <i class="fa-regular fa-heart"></i>
-        </div>
-    </div>
-    </div>
-    </div>
+
     <!--footer-->
     <footer class="footer">
         <h1 class="footer__logo"></h1>
@@ -162,10 +164,4 @@
             <li>Contact</li>
         </ul>
     </footer>
-
-
-
-
-
-
 </body>
