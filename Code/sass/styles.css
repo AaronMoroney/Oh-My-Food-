@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&family=Shrikhand&display=swap");
+.nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.navlogosection {
+  height: 65px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.navlogosection .logo {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "shrikhand";
+}
+
+.navlocation {
+  background-color: #f6f6f6;
+}
+.navlocation span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+}
+
+.locationtext {
+  padding-left: 10px;
+}
+
+.cta {
+  width: 375px;
+  height: 260px;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 6px 11px 23px 3px rgba(0, 0, 0, 0.12);
+  justify-content: space-around;
+  background-color: #f6f6f6;
+  margin-top: -120px;
+}
+.cta .heading {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0px;
+}
+.cta .p {
+  text-align: center;
+  font-family: "roboto light", sans-serif;
+  font-size: 16pt;
+}
+
+.howitworks {
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
+.howitworks__buttonwrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.howitworks__buttonwrapper .howitworks__button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 28px;
+  border-style: solid;
+  border-color: transparent;
+  width: 250px;
+  height: 64px;
+  justify-content: flex-start;
+  box-shadow: 6px 11px 23px 3px rgba(0, 0, 0, 0.12);
+}
+.howitworks__buttonwrapper .howitworks__number {
+  background-color: #9356DC;
+  color: white;
+  height: 20px;
+  width: 20px;
+  border-radius: 28px;
+  border-style: solid;
+  border-color: transparent;
+  margin-left: -20px;
+}
+.howitworks__buttonwrapper .fa-mobile-screen-button {
+  padding-left: 10px;
+}
+.howitworks__buttonwrapper .fa-list-ul {
+  padding-left: 10px;
+}
+.howitworks__buttonwrapper .fa-store {
+  padding-left: 10px;
+}
+.howitworks__buttonwrapper h3 {
+  padding-left: 10px;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+  height: 904px;
+}
+
+.restaurantscard__wrapper {
+  margin-left: 45px;
+  margin-right: 45px;
+  height: 677px;
+  width: 870px;
+}
+.restaurantscard__wrapper .restaurantscard {
+  background-color: white;
+}
+
+.cta__button {
+  display: flex;
+  color: white;
+  height: 48px;
+  width: 220px;
+  margin-bottom: 10px;
+  border-radius: 28px;
+  border-style: solid;
+  border-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 6px 11px 23px 3px rgba(0, 0, 0, 0.12);
+  background-image: linear-gradient(140deg, hsl(317deg, 100%, 74%) 0%, hsl(312deg, 87%, 71%) 11%, hsl(308deg, 76%, 68%) 22%, hsl(303deg, 66%, 65%) 33%, hsl(297deg, 62%, 63%) 44%, hsl(291deg, 63%, 62%) 56%, hsl(285deg, 64%, 62%) 67%, hsl(279deg, 65%, 61%) 78%, hsl(273deg, 65%, 61%) 89%, hsl(267deg, 66%, 60%) 100%);
+  background-attachment: fixed;
+}
+
+.button__text {
+  text-align: center;
+  font-family: "roboto light", sans-serif;
+  font-size: 13pt;
+}
+
+body {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+h1 {
+  font-family: "shrikhand";
+  font-size: 30px;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: "roboto regular", sans-serif;
+  font-weight: regular;
+}
+
+p {
+  font-family: "roboto light", sans-serif;
+  font-size: 16px;
+}
+
+header {
+  height: 800px;
+}
+
+.hero__image {
+  height: 580px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  position: relative;
+  z-index: -1;
+}
+
+.hero__contentContainer {
+  width: 100%;
+  background-color: white;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: transparent;
+  height: 320px;
+  margin-top: -80px;
+  position: relative;
+  bottom: 50px;
+  z-index: 1;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,35 @@
+@mixin borderstyle {
+    border-radius: 20px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+@mixin borderstyle-button {
+    border-radius: 28px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+
+
+@mixin center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin verticle {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin boxshadow {
+    -webkit-box-shadow: 6px 11px 23px 3px rgba(0,0,0,0.12); 
+    box-shadow: 6px 11px 23px 3px rgba(0,0,0,0.12);
+}

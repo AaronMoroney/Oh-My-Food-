@@ -1,0 +1,34 @@
+// button style
+
+.cta__button {
+    display: flex;
+    color: white;
+    height: 48px;
+    width: 220px;
+    margin-bottom: 10px;
+    @include borderstyle-button;
+    @include center;
+    @include row;
+    @include boxshadow;
+    background-image: linear-gradient(
+        140deg,
+        hsl(317deg 100% 74%) 0%,
+        hsl(312deg 87% 71%) 11%,
+        hsl(308deg 76% 68%) 22%,
+        hsl(303deg 66% 65%) 33%,
+        hsl(297deg 62% 63%) 44%,
+        hsl(291deg 63% 62%) 56%,
+        hsl(285deg 64% 62%) 67%,
+        hsl(279deg 65% 61%) 78%,
+        hsl(273deg 65% 61%) 89%,
+        hsl(267deg 66% 60%) 100%
+    );
+    background-attachment:fixed;
+    }
+    .button__text{
+        text-align: center;
+        font-family: $roboto-light;
+        font-size: 13pt;
+    }
+// how it works button styles
+
