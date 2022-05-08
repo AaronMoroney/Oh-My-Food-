@@ -1,5 +1,4 @@
 //borders
-
 @mixin borderstyle {
     border-radius: 20px;
     border-style: solid;
@@ -13,7 +12,6 @@
 }
 
 //alignment
-
 @mixin center {
     margin-left: auto;
     margin-right: auto;
@@ -32,7 +30,6 @@
 }
 
 //style
-
 @mixin boxshadow {
     -webkit-box-shadow: 6px 11px 23px 3px rgba(0,0,0,0.12); 
     box-shadow: 6px 11px 23px 3px rgba(0,0,0,0.12);
@@ -41,13 +38,13 @@
 //mixins for media querys - see map in variables
 
 @mixin tablet-only {
-    @media screen and (min-width: map-get($breakpoints , tablet)) and (max-width: map-get($breakpoints, tablet)) {
+    @media screen and (min-width: 768px) and (max-width: 991px) {
         @content;
     }
 }
 
 @mixin mobile-only {
-    @media screen and (min-width: map-get($breakpoints , mobile)) and (max-width: map-get($breakpoints, mobile)) {
+    @media screen and (min-width: 300px) and (max-width: 767px){
         @content;
     }
 }

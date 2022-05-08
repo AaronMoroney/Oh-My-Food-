@@ -28,6 +28,9 @@
 //header 
 header {
     height: 800px;
+    @include tablet-only {
+        height: 900px;
+    }
 }
 
 .hero__image {
@@ -62,7 +65,7 @@ header {
     @include boxshadow;
     justify-content: space-around;
     background-color: $background-light;
-    margin-top: -120px;
+    margin-top: -160px;
     .heading {
         @include center;
         padding-top: 0px;
@@ -79,11 +82,23 @@ header {
 .howitworks {
     margin-left: 45px;
     margin-right: 45px;
+    margin-top: 50px;
+    .howitworks__title {
+        @include center;
+    }
 }
 
-.howitworks__buttonwrapper {
+.howitworks__buttonsectionwrapper {
     @include row;
     justify-content: space-between;
+    @include tablet-only {
+        @include verticle;
+    }
+    .howitworks__buttonwrapper {
+        @include tablet-only {
+            padding-bottom: 15px;
+        }
+    }
     .howitworks__button {
         @include row;
         @include borderstyle-button;

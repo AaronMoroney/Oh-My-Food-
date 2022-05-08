@@ -64,6 +64,9 @@
             background-color: #99e2d0;
             color: #007b58;
             z-index: 2;
+            @include tablet-only {
+                left: 75%
+            }
         }
         .restaurantscard__info {
             @include row;
