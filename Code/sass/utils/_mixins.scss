@@ -1,3 +1,5 @@
+//borders
+
 @mixin borderstyle {
     border-radius: 20px;
     border-style: solid;
@@ -10,7 +12,7 @@
     border-color: transparent;
 }
 
-
+//alignment
 
 @mixin center {
     margin-left: auto;
@@ -29,7 +31,23 @@
     justify-content: center;
 }
 
+//style
+
 @mixin boxshadow {
     -webkit-box-shadow: 6px 11px 23px 3px rgba(0,0,0,0.12); 
     box-shadow: 6px 11px 23px 3px rgba(0,0,0,0.12);
+}
+
+//mixins for media querys - see map in variables
+
+@mixin tablet-only {
+    @media screen and (min-width: map-get($breakpoints , tablet)) and (max-width: map-get($breakpoints, tablet)) {
+        @content;
+    }
+}
+
+@mixin mobile-only {
+    @media screen and (min-width: map-get($breakpoints , mobile)) and (max-width: map-get($breakpoints, mobile)) {
+        @content;
+    }
 }
