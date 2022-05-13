@@ -1,12 +1,41 @@
-// button style
+//nav section
+.nav {
+    @include verticle;
+}
 
-.cta__button {
+.navlogosection {
+    height: 65px;
+    @include row;
+    .logo {
+        @include center;
+        font-family: $shrikhand;
+    }
+}
+    
+.navlocation {
+    background-color: $background-medium;
+    @include mobile-only{ 
+        width: 100%;
+    }
+    span {
+        @include row;
+        justify-content: center;
+    }  
+}
+
+.locationtext {
+    padding-left: 10px;
+}
+
+//cta button style
+
+.button__global {
     display: flex;
     color: white;
     height: 48px;
     width: 250px;
     margin-bottom: 10px;
-    @include borderstyle-button;
+    @include borderstyle;
     @include center;
     @include row;
     @include boxshadow;
@@ -32,66 +61,12 @@
 }
 
 
-// restaurant cards
-
-.restaurantscard__wrapper {
-    height: 677px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    .restaurantscard {
-        background-color: white;
-        @include borderstyle;
-        @include boxshadow;
-        width: 44%;
-        height: 305px;
-        margin: 0px 10px 0px 10px;
-        overflow: hidden;
-        position: relative;
-        .restaurantscard__image {
-            width: 100%;
-            height: 209px;
-            object-fit: cover;
-            object-position: center;
-            z-index: 1;
-        }
-        .restaurantcard__ribbon {
-            position: absolute;
-            left: 80%;
-            bottom: 75%;
-            padding: 5px 10px 5px 10px;
-            background-color: #99e2d0;
-            color: #007b58;
-            z-index: 2;
-            @include tablet-only {
-                left: 75%
-            }
-        }
-        .restaurantscard__info {
-            @include row;
-            justify-content: space-between;
-            height: 93px;
-            line-height: 10px;
-            margin-left: 10px;
-            margin-bottom: 10px;
-        }
-        .fa-heart  {
-            font-size: 35px;
-            padding-right: 5%;
-            &:hover {
-                color: $primary-color;
-            }
-        }
-    }
-}
-
 //footer
 .footer {
     background-color: $background-dark;
     color: white;
     display: flex;
-    height: 170px;
+    height: auto;
     @include verticle;
     .footer__logo {
         @include center;
@@ -106,8 +81,14 @@
         align-items: baseline;
         justify-content: space-evenly;
         font-family: $roboto;
+        @include mobile-only {
+            flex-direction: column;
+        }
+        >li {
+            margin-bottom: 15px;
+            @include mobile-only {
+                margin: 0px 0px 10px 20px;
+            }  
+        }
     }
 }
-
-
-

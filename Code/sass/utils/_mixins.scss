@@ -5,10 +5,9 @@
     border-color: transparent;
 }
 
-@mixin borderstyle-button {
-    border-radius: 28px;
-    border-style: solid;
-    border-color: transparent;
+//mobile margins
+@mixin mobile-margins {
+    margin: 0px 20px 0px 20px;
 }
 
 //alignment
@@ -38,7 +37,7 @@
 //mixins for media querys - see map in variables
 
 @mixin tablet-only {
-    @media screen and (min-width: 768px) and (max-width: 991px) {
+    @media screen and (max-width: 991px) {
         @content;
     }
 }
@@ -47,4 +46,10 @@
     @media screen and (min-width: 300px) and (max-width: 767px){
         @content;
     }
+}
+
+@mixin regular-font {
+    font-family: roboto;
+    font-weight: regular;
+    font-size: 17pt;
 }

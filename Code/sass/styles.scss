@@ -8,8 +8,7 @@
 //body
 
 body {
-    margin-left: 0px;
-    margin-right: 0px;
+    all: unset;
 }
 
 //fonts
@@ -23,12 +22,20 @@ h2 {
     font-family: $roboto;
     font-weight: regular;
     font-size: 18pt;
+    @include mobile-only {
+        font-size: 16pt;
+    }
 }
 
-h3, h4, h5, h6 {
+h3, h4 {
     font-family: $roboto-light;
     font-size: 18pt;
+    @include  mobile-only{
+        font-size: 16pt;
+    }
 }
+
+
 
 p {
     font-family: $roboto-light;
