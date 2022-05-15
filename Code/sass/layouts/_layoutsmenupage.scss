@@ -2,6 +2,16 @@
 //nav
 .fa-arrow-left {
     margin-left: 20px;
+    font-size: 30px;
+ }
+
+ //logo 
+
+ .logo {
+     margin-left: -20px;
+     @include mobile-only {
+         margin-left: 0px;
+     }
  }
 
  //hero
@@ -29,9 +39,12 @@
         height: 110px;
         margin-top: -100px;
         background-color: $background-light;
-        @include borderstyle;
+        @include borderstyle-background;
         position: relative;
         z-index: 2;
+        @include mobile-only {
+            height: 106px
+        }
     }
     .restaurantname {
         @include row;
@@ -53,12 +66,20 @@
     .dishtype__heading {
         display: flex;
         justify-content: center;
+        @include mobile-only {
+            margin-left: 13px;
+            justify-content: flex-start;
+        }
     }
     .line {
         width: 200px;
         border-style: solid;
         border-color: $tertiary-color;
         border-width: 3px;
+        @include mobile-only {
+            margin-left: 13px;
+            width: 45px
+        }
     }
 }
 
@@ -69,6 +90,9 @@
     align-items: center;
     margin-left: 45px;
     margin-right: 45px;
+    @include mobile-only{
+        @include mobile-margins-menu;
+    }
     .menuitem__button {
         background-color: white;
         @include borderstyle;
@@ -78,6 +102,9 @@
         height: 90px;
         width: 66%;
         margin-top: 15px;
+        @include mobile-only {
+            width: 100%;
+        }
     }
     .menuitem {
         margin-left: 7.5px;
@@ -86,12 +113,22 @@
     }
     .menuitem__title {
         @include regular-font;
+        @include mobile-only {
+        }
     }
     .menuitem__details {
         display: flex;
         justify-content: space-between;
         margin-left: 5px;
         margin-right: 5px;
+    }
+    .menuitem__subtitle {
+        @include mobile-only {
+            padding: 5px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
     }
     .price {
         @include regular-font;
@@ -102,6 +139,26 @@
 
 .orderbutton__section {
     background-color: $background-light;
-    padding-bottom: 20px;
+    height: 80px;
 }
 
+//footer logo
+.footer {
+    .footer__logo {
+        font-family: $shrikhand;
+        font-size: 37.5px;
+        @include mobile-only {
+            padding: 10px 0px 20px 35px;
+            height: 10px;
+            width: 100%;
+            font-size: 20px;
+            margin-left: 35px;
+        } 
+    }
+}
+
+//footer items 
+
+.fa-ul {
+    margin-top: 0px;
+}

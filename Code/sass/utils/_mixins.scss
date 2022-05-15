@@ -5,10 +5,23 @@
     border-color: transparent;
 }
 
+@mixin borderstyle-background {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-style: solid;
+    border-color: transparent;
+}
+
 //mobile margins
 @mixin mobile-margins {
     margin: 0px 20px 0px 20px;
 }
+//mobile margins
+@mixin mobile-margins-menu {
+    margin: 0px 13px 0px 13px;
+}
+
+
 
 //alignment
 @mixin center {

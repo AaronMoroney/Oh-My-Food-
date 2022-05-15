@@ -32,7 +32,8 @@ header {
 .hero__contentContainer {
   width: 100%;
   background-color: white;
-  border-radius: 20px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
   border-style: solid;
   border-color: transparent;
   height: 320px;
@@ -293,6 +294,16 @@ header {
 
 .fa-arrow-left {
   margin-left: 20px;
+  font-size: 30px;
+}
+
+.logo {
+  margin-left: -20px;
+}
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .logo {
+    margin-left: 0px;
+  }
 }
 
 .hero__image--restaurants {
@@ -321,11 +332,17 @@ header {
   height: 110px;
   margin-top: -100px;
   background-color: #f6f6f6;
-  border-radius: 20px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
   border-style: solid;
   border-color: transparent;
   position: relative;
   z-index: 2;
+}
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .restaurantpage__header .restaurantname__background {
+    height: 106px;
+  }
 }
 .restaurantpage__header .restaurantname {
   display: flex;
@@ -349,11 +366,23 @@ header {
   display: flex;
   justify-content: center;
 }
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .restaurantmenuwrapper .dishtype__heading {
+    margin-left: 13px;
+    justify-content: flex-start;
+  }
+}
 .restaurantmenuwrapper .line {
   width: 200px;
   border-style: solid;
   border-color: #99E2D0;
   border-width: 3px;
+}
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .restaurantmenuwrapper .line {
+    margin-left: 13px;
+    width: 45px;
+  }
 }
 
 .dish__wrapper {
@@ -362,6 +391,11 @@ header {
   align-items: center;
   margin-left: 45px;
   margin-right: 45px;
+}
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .dish__wrapper {
+    margin: 0px 13px 0px 13px;
+  }
 }
 .dish__wrapper .menuitem__button {
   background-color: white;
@@ -375,6 +409,11 @@ header {
   height: 90px;
   width: 66%;
   margin-top: 15px;
+}
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .dish__wrapper .menuitem__button {
+    width: 100%;
+  }
 }
 .dish__wrapper .menuitem {
   margin-left: 7.5px;
@@ -392,6 +431,14 @@ header {
   margin-left: 5px;
   margin-right: 5px;
 }
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .dish__wrapper .menuitem__subtitle {
+    padding: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
 .dish__wrapper .price {
   font-family: roboto;
   font-weight: regular;
@@ -400,7 +447,25 @@ header {
 
 .orderbutton__section {
   background-color: #f6f6f6;
-  padding-bottom: 20px;
+  height: 80px;
+}
+
+.footer .footer__logo {
+  font-family: "shrikhand";
+  font-size: 37.5px;
+}
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .footer .footer__logo {
+    padding: 10px 0px 20px 35px;
+    height: 10px;
+    width: 100%;
+    font-size: 20px;
+    margin-left: 35px;
+  }
+}
+
+.fa-ul {
+  margin-top: 0px;
 }
 
 .nav {
@@ -503,5 +568,16 @@ header {
 @media screen and (min-width: 300px) and (max-width: 767px) {
   .footer .fa-ul > li {
     margin: 0px 0px 10px 20px;
+  }
+}
+
+h1 {
+  font-family: "shrikhand";
+  font-size: 37.5px;
+}
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  h1 {
+    font-family: "shrikhand";
+    font-size: 32.5px;
   }
 }/*# sourceMappingURL=styles2.css.map */

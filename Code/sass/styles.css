@@ -32,7 +32,8 @@ header {
 .hero__contentContainer {
   width: 100%;
   background-color: white;
-  border-radius: 20px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
   border-style: solid;
   border-color: transparent;
   height: 320px;
@@ -400,7 +401,7 @@ body {
 
 h1 {
   font-family: "shrikhand";
-  font-size: 30px;
+  font-size: 37.5px;
 }
 
 h2 {
@@ -422,6 +423,12 @@ h3, h4 {
   h3, h4 {
     font-size: 16pt;
   }
+}
+
+h5, h6 {
+  font-family: roboto-light;
+  font-weight: regular;
+  font-size: 18pt;
 }
 
 p {

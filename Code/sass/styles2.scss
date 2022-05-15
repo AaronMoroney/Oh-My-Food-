@@ -6,6 +6,14 @@
 
 @import "./components/components";
 
+h1 {
+    font-family: $shrikhand;
+    font-size: 37.5px;
+    @include mobile-only {
+        font-family: $shrikhand;
+        font-size: 32.5px;
+    }
+}
 
 
 
