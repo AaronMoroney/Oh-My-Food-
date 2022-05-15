@@ -352,6 +352,18 @@ header {
   align-items: center;
   justify-content: space-around;
 }
+@media screen and (max-width: 991px) {
+  .restaurantpage__header .restaurantname {
+    margin-left: 30px;
+    margin-right: 20px;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .restaurantpage__header .restaurantname {
+    margin: 0px 13px 0px 13px;
+    justify-content: space-between;
+  }
+}
 .restaurantpage__header .fa-heart {
   font-size: 30px;
   margin-left: 40px;
@@ -359,7 +371,7 @@ header {
 
 .restaurantmenuwrapper {
   background-color: #f6f6f6;
-  height: 1300px;
+  height: 1265px;
   margin-top: -25px;
 }
 .restaurantmenuwrapper .dishtype__heading {
@@ -452,7 +464,9 @@ header {
 
 .footer .footer__logo {
   font-family: "shrikhand";
-  font-size: 37.5px;
+  font-size: 35px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 @media screen and (min-width: 300px) and (max-width: 767px) {
   .footer .footer__logo {
