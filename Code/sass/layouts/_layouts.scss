@@ -99,8 +99,10 @@ header {
         @include verticle;
     }
     .howitworks__buttonwrapper {
+        width: 30%;
         @include tablet-only {
             padding-bottom: 15px;
+            width: auto;
         }
         @include mobile-only {
             width: 100%;
@@ -110,7 +112,7 @@ header {
     .howitworks__button {
         @include row;
         @include borderstyle;
-        width: 255px;
+        width: 100%;
         height: 70px;
         justify-content:flex-start;
         @include boxshadow;
@@ -129,6 +131,9 @@ header {
         width: 20px;
         @include borderstyle;
         margin-left: -20px;
+    }
+    .howitworks__buttontext {
+        @include center;
     }
     .fa-mobile-screen-button {
         padding-left: 10px;
@@ -226,14 +231,24 @@ header {
                 height: 77px;
             }
         }
-        .fa-heart  {
+        .fa-regular fa-heart  {
             font-size: 35px;
+            padding-right: 5%;
+            z-index: 2;
             @include mobile-only {
                 font-size: 30px;
             }
-            padding-right: 5%;
             &:hover {
-                color: $primary-color;
+                display: none;
+            }
+        }
+        .fa-solid fa-heart {
+            font-size: 35px;
+            padding-right: 5%;
+            color: $primary-color;
+            z-index: 1;
+            @include mobile-only {
+                font-size: 30px;
             }
         }
     }
