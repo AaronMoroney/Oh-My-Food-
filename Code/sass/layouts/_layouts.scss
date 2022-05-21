@@ -188,12 +188,21 @@ header {
         margin: 0px 10px 30px 10px;
         overflow: hidden;
         position: relative;
+        transform: scale(1);
+        transition-property: transform;
+        transition-duration: 500ms;
         @include borderstyle;
         @include boxshadow;
         @include mobile-only {
             width: 85%;
             height: 250px;
             margin: 10px 0px 18px 0px;
+        }
+        &:hover {
+            box-shadow: 2px 2px 69px -16px rgba(147,86,220,0.39);
+            -webkit-box-shadow: 2px 2px 69px -16px rgba(147,86,220,0.39);
+            -moz-box-shadow: 2px 2px 69px -16px rgba(147,86,220,0.39);
+            transform: scale(1.02);
         }
         @include tablet-only {
             margin-bottom: 30px;
@@ -259,8 +268,17 @@ header {
 }
 */
 
-#button {
+#heart-button {
     opacity: 0;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.heart-button__wrapper {
+    margin-right: 10px;
 }
 
 .fa-regular.fa-heart {
@@ -280,21 +298,18 @@ header {
 }
 
 //outlined button checked + not checked
-
-#button:not(:checked) ~ .fa-regular.fa-heart {
+#heart-button:not(:checked) ~ .fa-regular.fa-heart {
     opacity: 1;
 }
-
-#button:checked ~ .fa-regular.fa-heart {
+#heart-button:checked ~ .fa-regular.fa-heart {
     opacity: 0;
 }
+
 //solid button - checked + not checked
-
-#button:not(:checked) ~ .fa-solid.fa-heart {
+#heart-button:not(:checked) ~ .fa-solid.fa-heart {
     opacity: 0;
 }
-
-#button:checked ~ .fa-solid.fa-heart {
+#heart-button:checked ~ .fa-solid.fa-heart {
     opacity: 1;
 }
 
