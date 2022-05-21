@@ -70,13 +70,16 @@
     @include verticle;
     .footer__logo {
         font-family: $shrikhand;
-        padding-top: 20px;
+        padding: 20px 0px 20px 0px;
         font-size: 30px;
         @include center;
         @include mobile-only {
             padding-left: 10%;
+            padding-bottom: 20px;
             font-size: 17pt;
             margin: 0px;
+            height: 20px;
+            width: 150px;
         }
     }
     .fa-utensils, .fa-handshake-angle {

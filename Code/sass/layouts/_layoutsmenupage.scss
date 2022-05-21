@@ -36,14 +36,14 @@
         z-index: -1;
     }
     .restaurantname__background {
-        height: 110px;
+        height: 115px;
         margin-top: -100px;
         background-color: $background-light;
         @include borderstyle-background;
         position: relative;
         z-index: 2;
         @include mobile-only {
-            height: 106px
+            height: 110px
         }
     }
     .restaurantname {
@@ -118,6 +118,7 @@
         margin-left: 7.5px;
         margin-top: 2.5px;
         height: 40px;
+        margin-right: 10px;
     }
     .menuitem__title {
         @include regular-font;
@@ -128,7 +129,7 @@
         display: flex;
         justify-content: space-between;
         margin-left: 5px;
-        margin-right: 5px;
+        margin-right: 15px;
     }
     .menuitem__subtitle {
         @include mobile-only {

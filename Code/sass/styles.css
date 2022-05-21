@@ -221,15 +221,15 @@ header {
 }
 .restaurantscard__wrapper .restaurantscard {
   background-color: white;
-  border-radius: 20px;
-  border-style: solid;
-  border-color: transparent;
-  box-shadow: 6px 11px 23px 3px rgba(0, 0, 0, 0.12);
   width: 44%;
   height: 305px;
   margin: 0px 10px 30px 10px;
   overflow: hidden;
   position: relative;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: transparent;
+  box-shadow: 6px 11px 23px 3px rgba(0, 0, 0, 0.12);
 }
 @media screen and (min-width: 300px) and (max-width: 767px) {
   .restaurantscard__wrapper .restaurantscard {
@@ -287,27 +287,31 @@ header {
     height: 77px;
   }
 }
-.restaurantscard__wrapper .restaurantscard .fa-regular fa-heart {
+.restaurantscard__wrapper .heart__button {
+  background-color: white;
+  border-style: none;
+}
+.restaurantscard__wrapper .heart__button:focus {
+  opacity: 0;
+}
+.restaurantscard__wrapper .heart__button .fa-regular.fa-heart {
   font-size: 35px;
   padding-right: 5%;
-  z-index: 2;
+  position: absolute;
 }
 @media screen and (min-width: 300px) and (max-width: 767px) {
-  .restaurantscard__wrapper .restaurantscard .fa-regular fa-heart {
+  .restaurantscard__wrapper .heart__button .fa-regular.fa-heart {
     font-size: 30px;
   }
 }
-.restaurantscard__wrapper .restaurantscard .fa-regular fa-heart:hover {
-  display: none;
-}
-.restaurantscard__wrapper .restaurantscard .fa-solid fa-heart {
+.restaurantscard__wrapper .heart__button .fa-solid.fa-heart {
   font-size: 35px;
   padding-right: 5%;
   color: #9356DC;
-  z-index: 1;
+  opacity: 1;
 }
 @media screen and (min-width: 300px) and (max-width: 767px) {
-  .restaurantscard__wrapper .restaurantscard .fa-solid fa-heart {
+  .restaurantscard__wrapper .heart__button .fa-solid.fa-heart {
     font-size: 30px;
   }
 }
@@ -385,7 +389,7 @@ header {
 }
 .footer .footer__logo {
   font-family: "shrikhand";
-  padding-top: 20px;
+  padding: 20px 0px 20px 0px;
   font-size: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -393,8 +397,11 @@ header {
 @media screen and (min-width: 300px) and (max-width: 767px) {
   .footer .footer__logo {
     padding-left: 10%;
+    padding-bottom: 20px;
     font-size: 17pt;
     margin: 0px;
+    height: 20px;
+    width: 150px;
   }
 }
 .footer .fa-utensils, .footer .fa-handshake-angle {
@@ -467,4 +474,9 @@ h5, h6 {
 p {
   font-family: "roboto light", sans-serif;
   font-size: 14pt;
+}
+
+a, a :visited {
+  color: inherit;
+  text-decoration: none;
 }/*# sourceMappingURL=styles.css.map */

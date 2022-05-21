@@ -183,13 +183,13 @@ header {
     justify-content: space-evenly;
     .restaurantscard {
         background-color: white;
-        @include borderstyle;
-        @include boxshadow;
         width: 44%;
         height: 305px;
         margin: 0px 10px 30px 10px;
         overflow: hidden;
         position: relative;
+        @include borderstyle;
+        @include boxshadow;
         @include mobile-only {
             width: 85%;
             height: 250px;
@@ -231,25 +231,32 @@ header {
                 height: 77px;
             }
         }
-        .fa-regular fa-heart  {
-            font-size: 35px;
-            padding-right: 5%;
-            z-index: 2;
-            @include mobile-only {
-                font-size: 30px;
-            }
-            &:hover {
-                display: none;
-            }
-        }
-        .fa-solid fa-heart {
-            font-size: 35px;
-            padding-right: 5%;
-            color: $primary-color;
-            z-index: 1;
-            @include mobile-only {
-                font-size: 30px;
-            }
+    }
+
+
+
+.heart__button {
+    background-color: white;
+    border-style: none;
+    &:focus {
+        opacity: 0;
+    }
+    .fa-regular.fa-heart  {
+        font-size: 35px;
+        padding-right: 5%;
+        position: absolute;
+        @include mobile-only {
+            font-size: 30px;
         }
     }
+    .fa-solid.fa-heart {
+        font-size: 35px;
+        padding-right: 5%;
+        color: $primary-color;
+        opacity: 1;
+        @include mobile-only {
+            font-size: 30px;
+        }
+    }
+}
 }
