@@ -287,33 +287,68 @@ header {
     height: 77px;
   }
 }
-.restaurantscard__wrapper .heart__button {
-  background-color: white;
-  border-style: none;
+
+/*
+.heart__button {
+    background-color: white;
+    border-style: none;
+    .input {
+        opacity: 0px;
+        width: 0px;
+        height: 0px;
+    }
+    .fa-regular.fa-heart::before  {
+        font-size: 35px;
+        padding-right: 5%;
+        position: absolute;
+        opacity: 1;
+        @include mobile-only {
+            font-size: 30px;
+        }
+    }
+    .fa-regular.fa-heart::after  {
+       opacity: 0;
+    }
 }
-.restaurantscard__wrapper .heart__button:focus {
+*/
+#button {
   opacity: 0;
 }
-.restaurantscard__wrapper .heart__button .fa-regular.fa-heart {
+
+.fa-regular.fa-heart {
   font-size: 35px;
-  padding-right: 5%;
   position: absolute;
 }
 @media screen and (min-width: 300px) and (max-width: 767px) {
-  .restaurantscard__wrapper .heart__button .fa-regular.fa-heart {
+  .fa-regular.fa-heart {
     font-size: 30px;
   }
 }
-.restaurantscard__wrapper .heart__button .fa-solid.fa-heart {
+
+.fa-solid.fa-heart {
   font-size: 35px;
-  padding-right: 5%;
   color: #9356DC;
-  opacity: 1;
 }
 @media screen and (min-width: 300px) and (max-width: 767px) {
-  .restaurantscard__wrapper .heart__button .fa-solid.fa-heart {
+  .fa-solid.fa-heart {
     font-size: 30px;
   }
+}
+
+#button:not(:checked) ~ .fa-regular.fa-heart {
+  opacity: 1;
+}
+
+#button:checked ~ .fa-regular.fa-heart {
+  opacity: 0;
+}
+
+#button:not(:checked) ~ .fa-solid.fa-heart {
+  opacity: 0;
+}
+
+#button:checked ~ .fa-solid.fa-heart {
+  opacity: 1;
 }
 
 .fa-arrow-left {
