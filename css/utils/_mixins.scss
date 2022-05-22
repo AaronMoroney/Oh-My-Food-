@@ -21,8 +21,6 @@
     margin: 0px 13px 0px 13px;
 }
 
-
-
 //alignment
 @mixin center {
     margin-left: auto;
@@ -47,6 +45,11 @@
     box-shadow: 6px 11px 23px 3px rgba(0,0,0,0.12);
 }
 
+@mixin  boxshadow-darker {
+    -webkit-box-shadow: 6px 11px 23px 3px rgba(0,0,0,0.20); 
+    box-shadow: 6px 11px 23px 3px rgba(0,0,0,0.20);
+}
+
 //mixins for media querys - see map in variables
 
 @mixin tablet-only {
@@ -65,4 +68,19 @@
     font-family: roboto;
     font-weight: regular;
     font-size: 17pt;
+}
+
+
+
+//text animation 
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform:translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translatey(0px);
+    }
 }

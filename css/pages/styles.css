@@ -1,4 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&family=Shrikhand&display=swap");
+@-webkit-keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translatey(0px);
+  }
+}
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translatey(0px);
+  }
+}
 header {
   height: 800px;
 }
@@ -369,197 +389,6 @@ header {
   opacity: 1;
 }
 
-.fa-arrow-left {
-  margin-left: 20px;
-  font-size: 30px;
-}
-
-.logo {
-  margin-left: -20px;
-}
-@media screen and (min-width: 300px) and (max-width: 767px) {
-  .logo {
-    margin-left: 0px;
-  }
-}
-
-.hero__image--restaurants {
-  height: 580px;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: bottom;
-     object-position: bottom;
-}
-
-.restaurantpage__header {
-  height: 500px;
-}
-.restaurantpage__header .hero__image--restaurants {
-  width: 100%;
-  height: 480px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: bottom;
-     object-position: bottom;
-  position: relative;
-  z-index: -1;
-}
-.restaurantpage__header .restaurantname__background {
-  height: 115px;
-  margin-top: -100px;
-  background-color: #f6f6f6;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  border-style: solid;
-  border-color: transparent;
-  position: relative;
-  z-index: 2;
-}
-@media screen and (min-width: 300px) and (max-width: 767px) {
-  .restaurantpage__header .restaurantname__background {
-    height: 110px;
-  }
-}
-.restaurantpage__header .restaurantname {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
-}
-@media screen and (max-width: 991px) {
-  .restaurantpage__header .restaurantname {
-    margin-left: 30px;
-    margin-right: 20px;
-  }
-}
-@media screen and (min-width: 300px) and (max-width: 767px) {
-  .restaurantpage__header .restaurantname {
-    margin: 0px 13px 0px 13px;
-    justify-content: space-between;
-  }
-}
-.restaurantpage__header .fa-heart {
-  font-size: 30px;
-  margin-left: 40px;
-}
-
-.restaurantmenuwrapper {
-  background-color: #f6f6f6;
-  height: 1265px;
-  margin-top: -25px;
-}
-.restaurantmenuwrapper .dishtype__heading {
-  display: flex;
-  justify-content: center;
-}
-@media screen and (min-width: 300px) and (max-width: 767px) {
-  .restaurantmenuwrapper .dishtype__heading {
-    margin-left: 13px;
-    justify-content: flex-start;
-  }
-}
-.restaurantmenuwrapper .line {
-  width: 200px;
-  border-style: solid;
-  border-color: #99E2D0;
-  border-width: 3px;
-}
-@media screen and (min-width: 300px) and (max-width: 767px) {
-  .restaurantmenuwrapper .line {
-    margin-left: 13px;
-    width: 45px;
-  }
-}
-
-.dish__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 45px;
-  margin-right: 45px;
-}
-@media screen and (min-width: 300px) and (max-width: 767px) {
-  .dish__wrapper {
-    margin: 0px 13px 0px 13px;
-  }
-}
-.dish__wrapper .menuitem__button {
-  background-color: white;
-  border-radius: 20px;
-  border-style: solid;
-  border-color: transparent;
-  box-shadow: 6px 11px 23px 3px rgba(0, 0, 0, 0.12);
-  display: flex;
-  flex-direction: column;
-  line-height: 10px;
-  height: 90px;
-  width: 66%;
-  margin-top: 15px;
-}
-@media screen and (min-width: 300px) and (max-width: 767px) {
-  .dish__wrapper .menuitem__button {
-    width: 100%;
-  }
-}
-.dish__wrapper .menuitem {
-  margin-left: 7.5px;
-  margin-top: 2.5px;
-  height: 40px;
-  margin-right: 10px;
-}
-.dish__wrapper .menuitem__title {
-  font-family: roboto;
-  font-weight: regular;
-  font-size: 17pt;
-}
-.dish__wrapper .menuitem__details {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 5px;
-  margin-right: 15px;
-}
-@media screen and (min-width: 300px) and (max-width: 767px) {
-  .dish__wrapper .menuitem__subtitle {
-    padding: 5px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-}
-.dish__wrapper .price {
-  font-family: roboto;
-  font-weight: regular;
-  font-size: 17pt;
-}
-
-.orderbutton__section {
-  background-color: #f6f6f6;
-  height: 80px;
-}
-
-.footer .footer__logo {
-  font-family: "shrikhand";
-  font-size: 35px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-@media screen and (min-width: 300px) and (max-width: 767px) {
-  .footer .footer__logo {
-    padding: 10px 0px 20px 35px;
-    height: 10px;
-    width: 100%;
-    font-size: 20px;
-    margin-left: 35px;
-  }
-}
-
-.fa-ul {
-  margin-top: 0px;
-}
-
 .nav {
   display: flex;
   flex-direction: column;
@@ -679,18 +508,48 @@ header {
   }
 }
 
+body {
+  all: unset;
+}
+
 h1 {
   font-family: "shrikhand";
   font-size: 37.5px;
 }
+
+h2 {
+  font-family: "roboto regular", sans-serif;
+  font-weight: regular;
+  font-size: 18pt;
+}
 @media screen and (min-width: 300px) and (max-width: 767px) {
-  h1 {
-    font-family: "shrikhand";
-    font-size: 32.5px;
+  h2 {
+    font-size: 16pt;
   }
+}
+
+h3, h4 {
+  font-family: "roboto light", sans-serif;
+  font-size: 18pt;
+}
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  h3, h4 {
+    font-size: 16pt;
+  }
+}
+
+h5, h6 {
+  font-family: roboto-light;
+  font-weight: regular;
+  font-size: 18pt;
+}
+
+p {
+  font-family: "roboto light", sans-serif;
+  font-size: 14pt;
 }
 
 a, a :visited {
   color: inherit;
   text-decoration: none;
-}/*# sourceMappingURL=styles2.css.map */
+}/*# sourceMappingURL=styles.css.map */

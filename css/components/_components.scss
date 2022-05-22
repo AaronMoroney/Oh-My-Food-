@@ -52,11 +52,14 @@
         hsl(273deg 65% 61%) 89%,
         hsl(267deg 66% 60%) 100%
     );
-    background-attachment:fixed;
+    background-attachment: fixed;
     .button__text{
         text-align: center;
         font-family: $roboto;
         font-size: 13pt;
+    }
+    &:hover {
+        @include boxshadow-darker;
     }
 }
 
