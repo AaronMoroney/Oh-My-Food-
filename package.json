@@ -1,0 +1,20 @@
+{
+  "name": "project3",
+  "version": "1.0.0",
+  "description": "oh my food website",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch ./css/main.scss:./css/styles.css"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AaronMoroneyDesignCo/Project3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AaronMoroneyDesignCo/Project3/issues"
+  },
+  "homepage": "https://github.com/AaronMoroneyDesignCo/Project3#readme"
+}
