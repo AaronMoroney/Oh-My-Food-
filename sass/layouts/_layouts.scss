@@ -119,6 +119,18 @@ header {
         justify-content:flex-start;
         @include boxshadow;
         margin: 0px 10px 0px 10px;
+        &:hover {
+            background-color: lighten(#9356DC, 35)
+        }
+        &:hover > .fa-mobile-screen-button {
+            color: $primary-color;
+        }
+        &:hover > .fa-list-ul {
+            color: $primary-color;
+        }
+        &:hover > .fa-store {
+            color: $primary-color;
+        }
         @include tablet-only {
             width: 375px;
         }

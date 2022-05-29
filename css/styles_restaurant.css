@@ -209,6 +209,18 @@ header {
   box-shadow: 6px 11px 23px 3px rgba(0, 0, 0, 0.12);
   margin: 0px 10px 0px 10px;
 }
+.howitworks__buttonsectionwrapper .howitworks__button:hover {
+  background-color: #f2eafb;
+}
+.howitworks__buttonsectionwrapper .howitworks__button:hover > .fa-mobile-screen-button {
+  color: #9356DC;
+}
+.howitworks__buttonsectionwrapper .howitworks__button:hover > .fa-list-ul {
+  color: #9356DC;
+}
+.howitworks__buttonsectionwrapper .howitworks__button:hover > .fa-store {
+  color: #9356DC;
+}
 @media screen and (max-width: 991px) {
   .howitworks__buttonsectionwrapper .howitworks__button {
     width: 375px;
