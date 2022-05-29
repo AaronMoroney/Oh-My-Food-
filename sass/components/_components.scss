@@ -50,6 +50,7 @@
     }
     &:hover {
         background: linear-gradient(to top left, darken(#9356DC,3), darken(#FF79DA,3));
+        @include boxshadow-darker;
     }
 }
 
