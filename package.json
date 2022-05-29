@@ -2,9 +2,8 @@
   "name": "project3",
   "version": "1.0.0",
   "description": "oh my food website",
-  "main": "index.html",
   "scripts": {
-    "sass": "sass --watch ./css/main.scss:./css/styles.css"
+    "sass": "sass --watch sass/styles:css"
     
   },
   "repository": {

@@ -1,9 +1,9 @@
-@import "css/utils/mixins.css";
-@import "css/utils/variables.css";
+@import "../utils/mixins";
+@import "../utils/variables";
 
-@import "css/layouts/layouts.css";
+@import "../layouts/layouts";
 
-@import "css/components/components.css";
+@import "../components/components";
 
 //body
 
@@ -53,7 +53,10 @@ a, a :visited {
     text-decoration: none;
 }
 
-
+.john {
+    background-color: blue;
+    height: 12px;
+}
 
 
 

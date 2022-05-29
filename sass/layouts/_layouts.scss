@@ -1,4 +1,8 @@
 //header 
+
+@import "../utils/mixins";
+@import "../utils/variables";
+
 header {
     height: 800px;
     @include tablet-only {
@@ -286,6 +290,5 @@ header {
 #heart-button:checked ~ .fa-solid.fa-heart {
     opacity: 1;
 }
-
 
 
