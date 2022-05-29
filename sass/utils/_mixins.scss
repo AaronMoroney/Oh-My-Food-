@@ -1,3 +1,5 @@
+@import "./variables";
+
 //borders
 @mixin borderstyle {
     border-radius: 20px;
@@ -83,3 +85,69 @@
         transform: translatey(0px);
     }
 }
+
+//loading spinner animation 
+
+//loader background image
+
+.loader {
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    animation: loader__fade 1250ms cubic-bezier(.25,.58,.04,.81) forwards;
+    animation-delay: 2750ms; 
+    
+}
+ //loader background image after
+
+//loader icon
+.loader__icon {
+    width: 75px;
+    height: 75px;
+    border: 15px solid;
+    border-color: transparent;
+    border-top-color: $primary-color; 
+    border-radius: 50%;
+    animation: loading 4s ease-in-out forwards;
+}
+
+@keyframes loading {
+    from {
+        opacity: 1;
+        transform:rotate(0turn);
+    }
+    to {
+        opacity: 0;
+        transform: rotate(3turn);
+    }
+}
+
+@keyframes loader__fade {
+    from {
+        opacity: 1; 
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
