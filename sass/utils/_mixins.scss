@@ -53,6 +53,11 @@
     box-shadow: 6px 11px 23px 3px rgba(0,0,0,0.20);
 }
 
+//color
+
+@mixin blend($img, $color, $blend) {
+    
+}
 //mixins for media querys - see map in variables
 
 @mixin tablet-only {
@@ -86,7 +91,7 @@
     }
 }
 
-//loading spinner animation 
+
 
 //loader background image
 
@@ -105,7 +110,7 @@
     animation-delay: 2750ms; 
     
 }
- //loader background image after
+
 
 //loader icon
 .loader__icon {
@@ -117,6 +122,7 @@
     border-radius: 50%;
     animation: loading 4s ease-in-out forwards;
 }
+//loader icon animation
 
 @keyframes loading {
     from {
@@ -128,6 +134,8 @@
         transform: rotate(3turn);
     }
 }
+
+//loader background animation
 
 @keyframes loader__fade {
     from {

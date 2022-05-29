@@ -290,14 +290,17 @@ header {
 .howitworks__buttonsectionwrapper .fa-mobile-screen-button {
   padding-left: 10px;
   font-size: 20px;
+  color: #7e7e7e;
 }
 .howitworks__buttonsectionwrapper .fa-list-ul {
   padding-left: 10px;
   font-size: 20px;
+  color: #7e7e7e;
 }
 .howitworks__buttonsectionwrapper .fa-store {
   padding-left: 10px;
   font-size: 20px;
+  color: #7e7e7e;
 }
 .howitworks__buttonsectionwrapper .howitworks__buttontext {
   padding-left: 10px;
@@ -511,17 +514,18 @@ header {
   justify-content: center;
   -webkit-box-shadow: 6px 11px 23px 3px rgba(0, 0, 0, 0.12);
   box-shadow: 6px 11px 23px 3px rgba(0, 0, 0, 0.12);
-  background-image: linear-gradient(140deg, hsl(317deg, 100%, 74%) 0%, hsl(312deg, 87%, 71%) 11%, hsl(308deg, 76%, 68%) 22%, hsl(303deg, 66%, 65%) 33%, hsl(297deg, 62%, 63%) 44%, hsl(291deg, 63%, 62%) 56%, hsl(285deg, 64%, 62%) 67%, hsl(279deg, 65%, 61%) 78%, hsl(273deg, 65%, 61%) 89%, hsl(267deg, 66%, 60%) 100%);
-  background-attachment: fixed;
+  border: none;
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
+  background-repeat: no-repeat;
 }
 .button__global .button__text {
   text-align: center;
   font-family: "roboto regular", sans-serif;
+  font-weight: 500;
   font-size: 13pt;
 }
 .button__global:hover {
-  -webkit-box-shadow: 6px 11px 23px 3px rgba(0, 0, 0, 0.2);
-  box-shadow: 6px 11px 23px 3px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to top left, #8b49d9, #ff6ad6);
 }
 
 .footer {
@@ -611,9 +615,8 @@ h3, h4 {
 }
 
 h5, h6 {
-  font-family: roboto-light;
-  font-weight: regular;
-  font-size: 18pt;
+  font-family: "roboto light", sans-serif;
+  font-size: 14pt;
 }
 
 p {

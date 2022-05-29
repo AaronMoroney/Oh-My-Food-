@@ -39,27 +39,17 @@
     @include center;
     @include row;
     @include boxshadow;
-    background-image: linear-gradient(
-        140deg,
-        hsl(317deg 100% 74%) 0%,
-        hsl(312deg 87% 71%) 11%,
-        hsl(308deg 76% 68%) 22%,
-        hsl(303deg 66% 65%) 33%,
-        hsl(297deg 62% 63%) 44%,
-        hsl(291deg 63% 62%) 56%,
-        hsl(285deg 64% 62%) 67%,
-        hsl(279deg 65% 61%) 78%,
-        hsl(273deg 65% 61%) 89%,
-        hsl(267deg 66% 60%) 100%
-    );
-    background-attachment: fixed;
+    border: none;
+    background: $background-gradient;
+    background-repeat: no-repeat;
     .button__text{
         text-align: center;
         font-family: $roboto;
+        font-weight: 500;
         font-size: 13pt;
     }
     &:hover {
-        @include boxshadow-darker;
+        background: linear-gradient(to top left, darken(#9356DC,3), darken(#FF79DA,3));
     }
 }
 
