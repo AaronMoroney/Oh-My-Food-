@@ -486,9 +486,10 @@ header {
     justify-content: space-between;
   }
 }
-.restaurantpage__header .fa-heart {
+.restaurantpage__header .fa-heart.restaurant-name__icon {
   font-size: 30px;
   margin-left: 40px;
+  position: unset;
 }
 
 .restaurantmenuwrapper {
@@ -531,7 +532,8 @@ header {
     margin: 0px 13px 0px 13px;
   }
 }
-.dish__wrapper .menuitem__button {
+
+.menuitem__button {
   background-color: white;
   border-radius: 20px;
   border-style: solid;
@@ -540,46 +542,80 @@ header {
   box-shadow: 6px 11px 23px 3px rgba(0, 0, 0, 0.12);
   display: flex;
   flex-direction: column;
+  border-width: 0px;
   line-height: 10px;
   height: 90px;
   width: 66%;
   margin-top: 15px;
   animation: transitionIn 2s;
+  position: relative;
 }
 @media screen and (min-width: 300px) and (max-width: 767px) {
-  .dish__wrapper .menuitem__button {
+  .menuitem__button {
     width: 100%;
   }
 }
-.dish__wrapper .menuitem {
+.menuitem__button:hover {
+  overflow: hidden;
+}
+.menuitem__button:hover > .menuitem__animation {
+  transition: transform 1000ms ease-in-out;
+  transform: scaleX(200);
+  transform-origin: 100% 0%;
+  visibility: visible;
+  overflow: hidden;
+  right: 0;
+  position: absolute;
+}
+.menuitem__button .menuitem {
   margin-left: 7.5px;
   margin-top: 2.5px;
   height: 40px;
   margin-right: 10px;
 }
-.dish__wrapper .menuitem__title {
+.menuitem__button .menuitem > .menuitem__title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menuitem__button .menuitem__title {
   font-family: roboto;
   font-weight: regular;
   font-size: 17pt;
 }
-.dish__wrapper .menuitem__details {
+.menuitem__button .menuitem__details {
   display: flex;
   justify-content: space-between;
   margin-left: 5px;
   margin-right: 15px;
 }
+.menuitem__button .menuitem__details > .menuitem__subtitle {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menuitem__button .menuitem__details > .price {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 @media screen and (min-width: 300px) and (max-width: 767px) {
-  .dish__wrapper .menuitem__subtitle {
+  .menuitem__button .menuitem__subtitle {
     padding: 5px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
   }
 }
-.dish__wrapper .price {
+.menuitem__button .price {
   font-family: roboto;
   font-weight: regular;
   font-size: 17pt;
+}
+.menuitem__button .menuitem__animation {
+  transition: 330ms ease-in-out;
+  height: 100%;
+  width: 1px;
+  background-color: #99E2D0;
+  visibility: hidden;
+  right: 0;
 }
 
 .orderbutton__section {

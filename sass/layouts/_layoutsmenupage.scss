@@ -59,9 +59,10 @@
             justify-content: space-between;
         }
     }
-    .fa-heart {
+    .fa-heart.restaurant-name__icon {
         font-size: 30px;
         margin-left: 40px;
+        position: unset;
     }
 }
 
@@ -101,49 +102,86 @@
     @include mobile-only{
         @include mobile-margins-menu;
     }
-    .menuitem__button {
-        background-color: white;
-        @include borderstyle;
-        @include boxshadow;
-        @include verticle;
-        line-height: 10px;
-        height: 90px;
-        width: 66%;
-        margin-top: 15px;
-        animation: transitionIn 2s;
-        @include mobile-only {
-            width: 100%;
-        }
+}
+
+//card or 'button' styling
+
+.menuitem__button {
+    background-color: white;
+    @include borderstyle;
+    @include boxshadow;
+    @include verticle;
+    border-width: 0px;
+    line-height: 10px;
+    height: 90px;
+    width: 66%;
+    margin-top: 15px;
+    animation: transitionIn 2s;
+    position: relative;
+    @include mobile-only {
+        width: 100%;
+    }
+    &:hover {
+        overflow: hidden;   
+    }
+    &:hover > .menuitem__animation {
+        transition: transform 1000ms ease-in-out;
+        transform:scaleX(200);
+        transform-origin: 100% 0%;
+        visibility: visible;
+        overflow: hidden;
+        right: 0;
+        position: absolute;
     }
     .menuitem {
         margin-left: 7.5px;
         margin-top: 2.5px;
         height: 40px;
         margin-right: 10px;
+        > .menuitem__title {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
     }
     .menuitem__title {
         @include regular-font;
-        @include mobile-only {
-        }
     }
     .menuitem__details {
         display: flex;
         justify-content: space-between;
         margin-left: 5px;
         margin-right: 15px;
+        > .menuitem__subtitle {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        > .price {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
     }
     .menuitem__subtitle {
         @include mobile-only {
             padding: 5px;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            white-space: nowrap;
         }
     }
     .price {
         @include regular-font;
+       
+    }
+    .menuitem__animation {
+        transition: 330ms ease-in-out;
+        height: 100%;
+        width: 1px;
+        background-color: $tertiary-color;
+        visibility: hidden;
+        right: 0;
     }
 }
+
 
 //order button section
 
