@@ -415,6 +415,7 @@ header {
 
 #heart-button:checked ~ .fa-solid.fa-heart {
   opacity: 1;
+  transition: 1s ease;
 }
 
 .fa-arrow-left {

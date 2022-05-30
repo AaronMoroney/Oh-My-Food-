@@ -288,7 +288,7 @@ header {
 }
 
 //outlined button checked + not checked
-//try adding animation timing to these, begin with opacity 0, and with opacity 1
+
 #heart-button:not(:checked) ~ .fa-regular.fa-heart {
     opacity: 1;
 }
@@ -299,9 +299,11 @@ header {
 //solid button - checked + not checked
 #heart-button:not(:checked) ~ .fa-solid.fa-heart {
     opacity: 0;
+    
 }
 #heart-button:checked ~ .fa-solid.fa-heart {
     opacity: 1;
+    transition: 1s ease;
 }
 
 
