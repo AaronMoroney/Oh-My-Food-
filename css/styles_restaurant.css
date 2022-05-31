@@ -573,11 +573,6 @@ header {
   height: 40px;
   margin-right: 10px;
 }
-.menuitem__button .menuitem > .menuitem__title {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
 .menuitem__button .menuitem__title {
   font-family: roboto;
   font-weight: regular;
@@ -588,16 +583,6 @@ header {
   justify-content: space-between;
   margin-left: 5px;
   margin-right: 15px;
-}
-.menuitem__button .menuitem__details > .menuitem__subtitle {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.menuitem__button .menuitem__details > .price {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 @media screen and (min-width: 300px) and (max-width: 767px) {
   .menuitem__button .menuitem__subtitle {
