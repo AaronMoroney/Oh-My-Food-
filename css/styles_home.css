@@ -290,6 +290,12 @@ header {
   color: white;
   height: 20px;
   width: 20px;
+  font-family: "roboto light", sans-serif;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   border-radius: 20px;
   border-style: solid;
   border-color: transparent;
@@ -298,6 +304,8 @@ header {
 .howitworks__buttonsectionwrapper .howitworks__buttontext {
   margin-left: auto;
   margin-right: auto;
+  font-family: "roboto light", sans-serif;
+  font-size: 16pt;
 }
 .howitworks__buttonsectionwrapper .fa-mobile-screen-button {
   padding-left: 10px;
@@ -445,14 +453,9 @@ header {
   }
 }
 
-.fa-solid.fa-heart {
+.fa-solid.fa-heart::before {
   font-size: 35px;
   color: #9356DC;
-}
-@media screen and (min-width: 300px) and (max-width: 767px) {
-  .fa-solid.fa-heart {
-    font-size: 30px;
-  }
 }
 
 #heart-button:not(:checked) ~ .fa-regular.fa-heart {
@@ -492,18 +495,16 @@ header {
 
 .navlocation {
   background-color: #eaeaea;
-}
-@media screen and (min-width: 300px) and (max-width: 767px) {
-  .navlocation {
-    width: 100%;
-  }
-}
-.navlocation span {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   justify-content: center;
+}
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .navlocation {
+    width: 100%;
+  }
 }
 
 .locationtext {
@@ -610,7 +611,6 @@ h1 {
 
 h2 {
   font-family: "roboto regular", sans-serif;
-  font-weight: regular;
   font-size: 18pt;
 }
 @media screen and (min-width: 300px) and (max-width: 767px) {

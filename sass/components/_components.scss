@@ -14,13 +14,11 @@
     
 .navlocation {
     background-color: $background-medium;
+    @include row;
+    justify-content: center;
     @include mobile-only{ 
         width: 100%;
     }
-    span {
-        @include row;
-        justify-content: center;
-    }  
 }
 
 .locationtext {

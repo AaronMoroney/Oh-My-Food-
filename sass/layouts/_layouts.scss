@@ -142,12 +142,16 @@ header {
         color: white;
         height: 20px;
         width: 20px;
+        font-family: $roboto-light;
+        font-size: 14px;
+        @include row;
         @include borderstyle;
         margin-left: -20px;
     }
     .howitworks__buttontext {
         @include center;
-       
+        font-family: $roboto-light;
+        font-size: 16pt;
     }
     .fa-mobile-screen-button {
         padding-left: 10px;
@@ -279,12 +283,9 @@ header {
     }
 }
 
-.fa-solid.fa-heart {
+.fa-solid.fa-heart::before {
     font-size: 35px;
     color: $primary-color;
-    @include mobile-only {
-        font-size: 30px;
-    }
 }
 
 //outlined button checked + not checked
