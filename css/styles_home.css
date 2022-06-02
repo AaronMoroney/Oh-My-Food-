@@ -159,9 +159,16 @@ header {
   }
 }
 
-.cta {
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .cta {
+    width: 100%;
+    background-color: #f6f6f6;
+  }
+}
+.cta .cta__content-wrapper {
   width: 375px;
   height: 290px;
+  background-color: #f6f6f6;
   border-radius: 20px;
   border-style: solid;
   border-color: transparent;
@@ -172,28 +179,27 @@ header {
   -webkit-box-shadow: 6px 11px 23px 3px rgba(0, 0, 0, 0.12);
   box-shadow: 6px 11px 23px 3px rgba(0, 0, 0, 0.12);
   justify-content: space-around;
-  background-color: #f6f6f6;
   margin-top: -160px;
 }
 @media screen and (max-width: 991px) {
-  .cta {
+  .cta .cta__content-wrapper {
     height: 250px;
   }
 }
 @media screen and (min-width: 300px) and (max-width: 767px) {
-  .cta {
+  .cta .cta__content-wrapper {
     margin-top: 50px;
     border-radius: 0px;
     box-shadow: none;
     border: none;
   }
 }
-.cta .heading {
+.cta .cta__content-wrapper .heading {
   margin-left: auto;
   margin-right: auto;
   padding-top: 0px;
 }
-.cta .p {
+.cta .cta__content-wrapper .p {
   text-align: center;
   font-family: "roboto light", sans-serif;
   font-size: 16pt;

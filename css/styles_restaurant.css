@@ -105,9 +105,16 @@ header {
   }
 }
 
-.cta {
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .cta {
+    width: 100%;
+    background-color: #f6f6f6;
+  }
+}
+.cta .cta__content-wrapper {
   width: 375px;
   height: 290px;
+  background-color: #f6f6f6;
   border-radius: 20px;
   border-style: solid;
   border-color: transparent;
@@ -118,28 +125,27 @@ header {
   -webkit-box-shadow: 6px 11px 23px 3px rgba(0, 0, 0, 0.12);
   box-shadow: 6px 11px 23px 3px rgba(0, 0, 0, 0.12);
   justify-content: space-around;
-  background-color: #f6f6f6;
   margin-top: -160px;
 }
 @media screen and (max-width: 991px) {
-  .cta {
+  .cta .cta__content-wrapper {
     height: 250px;
   }
 }
 @media screen and (min-width: 300px) and (max-width: 767px) {
-  .cta {
+  .cta .cta__content-wrapper {
     margin-top: 50px;
     border-radius: 0px;
     box-shadow: none;
     border: none;
   }
 }
-.cta .heading {
+.cta .cta__content-wrapper .heading {
   margin-left: auto;
   margin-right: auto;
   padding-top: 0px;
 }
-.cta .p {
+.cta .cta__content-wrapper .p {
   text-align: center;
   font-family: "roboto light", sans-serif;
   font-size: 16pt;
@@ -586,6 +592,11 @@ header {
   white-space: nowrap;
   overflow: hidden;
 }
+.menuitem__button .menuitem__subtitle {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
 .menuitem__button .menuitem__details {
   display: flex;
   justify-content: space-between;
@@ -604,25 +615,28 @@ header {
   font-size: 30px;
   height: 100%;
   color: #fcfefe;
-  animation: spinning__circle 5s ease-in-out;
-  animation-fill-mode: infinite;
-  animation-iteration-count: 3;
+  animation: spinning__circle 3s ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 @keyframes spinning__circle {
   0% {
     transform: rotate(0turn);
   }
-  20% {
+  25% {
     transform: rotate(3turn);
   }
   100% {
     transform: rotate(0turn);
   }
+  0% {
+    transform: rotate(3turn);
+  }
 }
 .orderbutton__section {
   background-color: #f6f6f6;
   height: 80px;
+  padding-top: 20px;
 }
 
 .footer .footer__logo {

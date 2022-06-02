@@ -140,13 +140,16 @@
         margin-right: 5px;
         width: 100%;
         justify-content: center;
-       
     }
     .menuitem__title, .menuitem__subtitle, .price {
         margin: 10px 0px 0px 5px;
     }
     .menuitem__title {
-        
+        text-overflow:ellipsis;
+        white-space:nowrap;
+        overflow:hidden;
+    }
+    .menuitem__subtitle {
         text-overflow:ellipsis;
         white-space:nowrap;
         overflow:hidden;
@@ -168,9 +171,8 @@
             font-size: 30px;
             height: 100%;
             color: lighten($color: #99E2D0, $amount: 25%);
-            animation: spinning__circle 5s ease-in-out ;
-            animation-fill-mode: infinite;
-            animation-iteration-count: 3;
+            animation: spinning__circle 3s ease-in-out;
+            animation-iteration-count: infinite;
         }
     }
 }
@@ -181,11 +183,14 @@
     0% {
         transform:rotate(0turn);
     }
-    20% {
+    25% {
         transform: rotate(3turn);
     }
     100% {
         transform: rotate(0turn);
+    }
+    0% {
+        transform: rotate(3turn);
     }
 }
 
@@ -198,6 +203,7 @@
 .orderbutton__section {
     background-color: $background-light;
     height: 80px;
+    padding-top: 20px;
 }
 
 //footer logo
