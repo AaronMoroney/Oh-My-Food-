@@ -168,19 +168,27 @@
             font-size: 30px;
             height: 100%;
             color: lighten($color: #99E2D0, $amount: 25%);
-            animation: spinning__circle 2.5s ease-in-out;
+            animation: spinning__circle 5s ease-in-out ;
+            animation-fill-mode: infinite;
+            animation-iteration-count: 3;
         }
     }
 }
 
+//animation of circle
+
 @keyframes spinning__circle {
-    from {
+    0% {
         transform:rotate(0turn);
     }
-    to {
+    20% {
         transform: rotate(3turn);
     }
+    100% {
+        transform: rotate(0turn);
+    }
 }
+
 
 
 
