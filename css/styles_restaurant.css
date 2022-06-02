@@ -540,43 +540,33 @@ header {
   border-color: transparent;
   -webkit-box-shadow: 6px 11px 23px 3px rgba(0, 0, 0, 0.12);
   box-shadow: 6px 11px 23px 3px rgba(0, 0, 0, 0.12);
-  display: flex;
-  flex-direction: column;
   border-width: 0px;
   line-height: 10px;
   height: 90px;
   width: 66%;
   margin-top: 15px;
   animation: transitionIn 2s;
-  position: relative;
+  overflow: hidden;
 }
 @media screen and (min-width: 300px) and (max-width: 767px) {
   .menuitem__button {
     width: 100%;
   }
 }
-.menuitem__button:hover {
-  overflow: hidden;
+.menuitem__button .menuitem__wrapper {
+  display: flex;
+  flex-direction: row;
 }
-.menuitem__button:hover > .menuitem__animation {
-  transition: transform 1000ms ease-in-out;
-  transform: scaleX(200);
-  transform-origin: 100% 0%;
+.menuitem__button .menuitem__wrapper:hover > .menuitem--animation {
   visibility: visible;
-  overflow: hidden;
-  right: 0;
-  position: absolute;
+  width: 30%;
 }
 .menuitem__button .menuitem {
-  margin-left: 7.5px;
-  margin-top: 2.5px;
-  height: 40px;
-  margin-right: 10px;
-}
-.menuitem__button .menuitem__title {
-  font-family: roboto;
-  font-weight: regular;
-  font-size: 17pt;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 100%;
 }
 .menuitem__button .menuitem__details {
   display: flex;
@@ -584,25 +574,30 @@ header {
   margin-left: 5px;
   margin-right: 15px;
 }
-@media screen and (min-width: 300px) and (max-width: 767px) {
-  .menuitem__button .menuitem__subtitle {
-    padding: 5px;
-  }
-}
-.menuitem__button .price {
-  font-family: roboto;
-  font-weight: regular;
-  font-size: 17pt;
-}
-.menuitem__button .menuitem__animation {
-  transition: 330ms ease-in-out;
-  height: 100%;
-  width: 1px;
+.menuitem__button .menuitem--animation {
   background-color: #99E2D0;
+  width: 0%;
   visibility: hidden;
-  right: 0;
+  transition: 330ms ease-in-out;
+}
+.menuitem__button .menuitem--animation .fa-circle-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  height: 100%;
+  color: #fcfefe;
+  animation: spinning__circle 3s ease-in-out;
 }
 
+@keyframes spinning__circle {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(3turn);
+  }
+}
 .orderbutton__section {
   background-color: #f6f6f6;
   height: 80px;

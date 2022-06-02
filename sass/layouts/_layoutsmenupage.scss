@@ -110,37 +110,30 @@
     background-color: white;
     @include borderstyle;
     @include boxshadow;
-    @include verticle;
     border-width: 0px;
     line-height: 10px;
     height: 90px;
     width: 66%;
     margin-top: 15px;
     animation: transitionIn 2s;
-    position: relative;
+    overflow: hidden;
     @include mobile-only {
         width: 100%;
     }
-    &:hover {
-        overflow: hidden;   
-    }
-    &:hover > .menuitem__animation {
-        transition: transform 1000ms ease-in-out;
-        transform:scaleX(200);
-        transform-origin: 100% 0%;
-        visibility: visible;
-        overflow: hidden;
-        right: 0;
-        position: absolute;
+    .menuitem__wrapper {
+        display: flex;
+        flex-direction: row;
+        &:hover > .menuitem--animation {
+            visibility: visible;
+            width: 30%;
+        }
     }
     .menuitem {
-        margin-left: 7.5px;
-        margin-top: 2.5px;
-        height: 40px;
-        margin-right: 10px;
-    }
-    .menuitem__title {
-        @include regular-font;
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+        margin-right: 15px;
+        width: 100%;
     }
     .menuitem__details {
         display: flex;
@@ -148,24 +141,33 @@
         margin-left: 5px;
         margin-right: 15px;
     }
-    .menuitem__subtitle {
-        @include mobile-only {
-            padding: 5px;
+    .menuitem--animation {
+        background-color: $tertiary-color;
+        width: 0%;
+        visibility: hidden;
+        transition: 330ms ease-in-out;
+        .fa-circle-check {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            height: 100%;
+            color: lighten($color: #99E2D0, $amount: 25%);
+            animation: spinning__circle 3s ease-in-out;
         }
     }
-    .price {
-        @include regular-font;
-       
+}
+
+@keyframes spinning__circle {
+    from {
+        transform:rotate(0turn);
     }
-    .menuitem__animation {
-        transition: 330ms ease-in-out;
-        height: 100%;
-        width: 1px;
-        background-color: $tertiary-color;
-        visibility: hidden;
-        right: 0;
+    to {
+        transform: rotate(3turn);
     }
 }
+
+
 
 
 //order button section
